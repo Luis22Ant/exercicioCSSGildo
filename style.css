@@ -1,0 +1,18 @@
+#grid-container {
+    display: grid;
+    grid-template-columns: auto 300px;
+    grid-template-columns: 150px auto 200px;
+    grid-template-areas:
+        "menu menu"
+        "conteudo  anuncio"
+        "rodape rodape";
+}
+#grid-container nav{
+    grid-area: menu;
+}
+#grid-container main{
+    grid-area: conteudo;
+}
+#grid-container aside{
+    grid-area: anuncio;
+}
